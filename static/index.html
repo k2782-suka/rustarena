@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RustArena PvP</title>
+    <style>
+        body { margin: 0; background: #0f172a; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        #join-box { margin-top: 100px; background: #1e293b; padding: 30px; border-radius: 10px; text-align: center; }
+        input { padding: 10px; border-radius: 5px; border: none; margin-right: 10px; }
+        button { padding: 10px 20px; background: #f97316; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+        canvas { background: #020617; border: 2px solid #334155; margin-top: 15px; border-radius: 8px; cursor: crosshair; }
+        #hud { display: flex; gap: 30px; margin-top: 15px; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<div id="join-box">
+    <h2>🦀 RustArena: Онлайн Шутер</h2>
+    <input type="text" id="nickname" placeholder="Введи свой ник">
+    <button onclick="joinArena()">В бой!</button>
+</div>
+
+<div id="game-area" style="display:none; text-align:center;">
+    <div id="hud">
+        <div>❤️ Здоровье: <b id="my-hp">100</b></div>
+        <div>💀 Убийств: <b id="my-kills">0</b></div>
+        <div>Управление: <b>WASD</b> — бег, <b>ЛКМ</b> — огонь</div>
+    </div>
+    <canvas id="arena" width="800" height="600"></canvas>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
