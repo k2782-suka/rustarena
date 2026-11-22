@@ -4,7 +4,7 @@
 
 ## 🚀 Технологический стек
 
-* **Backend:** Rust (асинхронный движок `Tokio`, веб-сервер `Warp`, WebSockets, сериализация `Serde`)
+* **Backend:** [Rust](https://rustup.rs) (асинхронный движок `Tokio`, веб-сервер `Warp`, WebSockets, сериализация `Serde`)
 * **Frontend:** Vanilla JavaScript (ES6+), HTML5 Canvas API, CSS3
 * **Сборка:** Cargo
 
